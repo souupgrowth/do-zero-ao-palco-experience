@@ -31,8 +31,8 @@ a{color:inherit}
 .graphic-cta:active{transform:translateY(1px)}
 .graphic-cta img{width:clamp(295px,37vw,450px);height:auto;display:block}
 .speakers{position:relative;height:clamp(375px,37vw,475px);max-width:1280px;margin:0 auto}
-.speakers__portrait{display:block;position:absolute;z-index:1;width:min(64%,790px);height:auto;top:-112px;left:50%;transform:translateX(-50%);object-fit:contain;pointer-events:none}
-.speakers__info{position:absolute;z-index:2;top:24%;width:235px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))}
+.speakers__portrait{display:block;position:absolute;z-index:1;width:min(64%,790px);height:auto;top:18px;left:50%;transform:translateX(-50%);object-fit:contain;pointer-events:none}
+.speakers__info{position:absolute;z-index:2;top:40%;width:235px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))}
 .speakers__info--left{left:clamp(16px,3.8vw,80px);text-align:right}
 .speakers__info--right{right:clamp(16px,3.8vw,80px);text-align:left}
 .speakers__info h2{font-weight:800;font-size:clamp(17px,1.45vw,21px);line-height:1.15;margin:0}
@@ -85,8 +85,8 @@ a{color:inherit}
 .faq details[open] .faq__plus::after{transform:rotate(0)}
 .faq__answer{padding:0 19px 18px;line-height:1.6;color:#e2e5ed;font-size:13px}
 .footer{font-size:11px;color:#aeb3bb;text-align:center;padding:17px 18px 23px;background:rgba(0,0,0,.35);line-height:1.5}
-@media(min-width:1500px){.scene-top{background-size:1600px auto}.hero{min-height:760px}.speakers{height:435px}}
-@media(max-width:900px){.hero{min-height:560px}.hero__logo{width:195px;margin-bottom:29px}.hero__headline{font-size:clamp(28px,4.4vw,42px)}.hero__intro{margin-top:18px}.speakers{height:350px}.speakers__portrait{width:min(66%,630px);top:-68px}.speakers__info{top:29%;width:190px}.speakers__info--left{left:22px}.speakers__info--right{right:22px}.speakers__info h2{font-size:17px}.speakers__info p{font-size:12px}.pillar-card{min-height:270px;padding:22px 15px 20px}.pillar-card__icon{width:50px;height:50px}.pillars{padding-bottom:53px}}
+@media(min-width:1500px){.scene-top{background-size:1600px auto}.hero{min-height:760px}.speakers{height:435px}.speakers__portrait{top:8px}}
+@media(max-width:900px){.hero{min-height:560px}.hero__logo{width:195px;margin-bottom:29px}.hero__headline{font-size:clamp(28px,4.4vw,42px)}.hero__intro{margin-top:18px}.speakers{height:350px}.speakers__portrait{width:min(66%,630px);top:42px}.speakers__info{top:40%;width:190px}.speakers__info--left{left:22px}.speakers__info--right{right:22px}.speakers__info h2{font-size:17px}.speakers__info p{font-size:12px}.pillar-card{min-height:270px;padding:22px 15px 20px}.pillar-card__icon{width:50px;height:50px}.pillars{padding-bottom:53px}}
 @media(max-width:700px){
   .scene-top{background-image:none;background-color:var(--bg)}
   .hero{min-height:0;padding:35px 15px 55px;position:relative;isolation:isolate;overflow:hidden;background-image:linear-gradient(180deg,rgba(0,3,10,.3) 0%,rgba(0,4,10,.87) 44%,rgba(20,21,24,.98) 62%,#1f1f1f 100%),url('img/fundo1.png');background-position:center top,center top;background-size:cover,auto 720px;background-repeat:no-repeat}
@@ -94,49 +94,3 @@ a{color:inherit}
   .hero__headline{font-size:clamp(27px,6.5vw,43px);line-height:1.17;letter-spacing:-.035em}
   .hero__you{font-size:1.34em;margin-top:4px}
   .hero__intro{font-size:14px;margin:18px auto 27px;line-height:1.55}
-  .event-details{gap:9px 15px;margin:3px 0 17px}
-  .event-details__item{font-size:11px;gap:5px}
-  .event-details__item:not(:last-child){padding-right:0;border-right:none}
-  .event-details__item svg{width:17px;height:17px}
-  .graphic-cta img{width:min(365px,96vw)}
-  .speakers{height:auto;display:grid;grid-template-columns:1fr 1fr;column-gap:8px;padding:0 12px 30px;max-width:520px}
-  .speakers__portrait{position:relative;grid-column:1/-1;width:min(100%,520px);max-width:100%;height:auto;left:auto;top:auto;transform:none;margin:-30px auto 18px}
-  .speakers__info{position:static;filter:none;width:auto;max-width:240px;text-align:center;margin:0 auto}
-  .speakers__info--left{text-align:center}.speakers__info--right{text-align:center}
-  .speakers__info h2{font-size:clamp(14px,3.65vw,19px);white-space:normal}
-  .speakers__info .tiny-line{margin:8px auto 9px}
-  .speakers__info p{font-size:clamp(10px,3vw,13px);line-height:1.4}
-  .pillars{padding:0 15px 45px;max-width:510px}
-  .pillars__grid{grid-template-columns:1fr;gap:12px}
-  .pillar-card{min-height:0;padding:20px 24px 23px}
-  .pillar-card__icon{width:45px;height:45px;margin-bottom:10px}
-  .pillar-card h2{font-size:20px}
-  .pillar-card .tiny-line{margin:10px auto}
-  .pillar-card p{font-size:13px;max-width:290px;margin:0 auto}
-  .ticker{height:39px;font-size:12px}
-  .ticker__group{gap:19px;padding-right:19px}
-  .scene-bottom{background-position:center top,center top;background-size:cover,auto 100%}
-  .signup{padding:49px 18px 38px}
-  .signup__lead{font-size:13px;margin-bottom:22px}
-  .signup-form__fields{grid-template-columns:1fr;gap:10px;max-width:430px;margin:0 auto 10px}
-  .field{height:51px}
-  .consent{max-width:430px;margin:15px auto 0;font-size:11px}
-  .faq{padding:2px 14px 54px}
-  .faq__list{gap:9px}
-  .faq summary{font-size:12px;padding:15px}
-  .faq__answer{font-size:12px;padding:0 15px 16px}
-  .footer{font-size:10px}
-}
-@media(max-width:380px){.hero__headline{font-size:26px}.hero__logo{width:158px}.event-details__item{font-size:10px}.hero__intro{font-size:13px}.signup h2,.faq h2{font-size:31px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker__track{animation:none}.graphic-cta{transition:none}}
-
-/* Segundo CTA segue a frase "QUERO ME INSCREVER" do layout de referência. */
-.submit-cta{display:inline-flex;justify-content:center;align-items:center;gap:16px;width:min(430px,100%);min-height:62px;padding:12px 22px;margin:8px auto 0;border:1px solid #ffd46c;border-radius:12px;background:linear-gradient(180deg,#ffe17a 0%,#ffcb3f 32%,#ffa901 100%);box-shadow:0 5px 20px rgba(255,169,0,.22),inset 0 1px 3px rgba(255,255,255,.65);color:#0c0a08;font:800 clamp(15px,1.55vw,20px) Montserrat,Arial,sans-serif;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
-.submit-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,169,0,.35),inset 0 1px 3px rgba(255,255,255,.65)}
-.submit-cta:focus-visible{outline:3px solid white;outline-offset:4px}
-.submit-cta svg{width:24px;height:24px;flex:none}
-@media(prefers-reduced-motion:reduce){.submit-cta{transition:none}}
-
-/* AJUSTE PONTUAL: alterar esse valor move os palestrantes para cima/baixo SEM editar as fotografias.
-   No desktop, quanto mais negativo o top, mais para cima a dupla fica.
-   No celular, altere somente a margem superior da regra mobile. */
