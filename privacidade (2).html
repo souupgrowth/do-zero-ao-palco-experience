@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0e">
+  <meta name="description" content="Saiba como são tratados seus dados pessoais na inscrição do Do Zero ao Palco Experience: finalidades, compartilhamento, segurança e direitos conforme a LGPD.">
+  <title>Privacidade e Transparência | Do Zero ao Palco Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#07090d;--surface:#11151d;--gold:#ffbf27;--gold-soft:#f4d385;--text:#f8f8fa;--muted:#bec1ca;--line:rgba(255,194,65,.22);--limit:1010px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;color:var(--text);background:var(--bg);font:400 15px/1.8 Montserrat,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:2px solid var(--gold);outline-offset:5px;border-radius:3px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip{position:absolute;top:-200px;left:18px;z-index:100;padding:10px 18px;background:#ffcf56;color:#181818;text-decoration:none}.skip:focus{top:10px}
+    .hero{position:relative;overflow:hidden;min-height:444px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 64% 100% at 50% 0%,rgba(239,167,31,.16),transparent 67%),radial-gradient(ellipse 45% 68% at 0 100%,rgba(8,25,45,.8),transparent 78%),linear-gradient(180deg,#0c1018 0%,#080b0f 100%)}
+    .hero:before,.hero:after{content:"";position:absolute;pointer-events:none}.hero:before{width:100%;height:1px;top:0;left:0;background:linear-gradient(90deg,transparent,#ffc34e,transparent);opacity:.55}.hero:after{width:880px;height:340px;top:-255px;left:50%;transform:translateX(-50%);border-radius:50%;border:1px solid rgba(255,191,47,.12);box-shadow:0 0 125px rgba(251,161,19,.08)}
+    .topbar{max-width:1180px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{text-decoration:none;display:flex;align-items:center;min-height:55px}.brand img{display:block;width:142px;max-height:82px;object-fit:contain;filter:drop-shadow(0 3px 10px rgba(0,0,0,.4))}.back{font-size:12px;text-decoration:none;font-weight:700;letter-spacing:.02em;border:1px solid rgba(255,208,104,.55);color:#f9d78b;padding:11px 17px;border-radius:9px;white-space:nowrap;transition:background .2s}.back:hover{background:rgba(255,191,47,.10)}
+    .hero-copy{max-width:var(--limit);margin:15px auto 0;padding:8px 24px 76px;text-align:center;position:relative;z-index:1}.eyebrow{color:#f6bf4e;text-transform:uppercase;letter-spacing:.28em;font-size:10px;font-weight:800;margin:4px 0 16px}.hero h1{font-size:clamp(31px,5.25vw,60px);font-weight:900;letter-spacing:-.065em;line-height:1.12;margin:0 0 20px}.hero h1 span{color:var(--gold)}.thin-glow{display:block;width:112px;height:2px;margin:0 auto 25px;background:linear-gradient(90deg,transparent,#ffbb2b,transparent);box-shadow:0 0 20px #efa21a}.hero-copy>p:last-child{font-size:clamp(13px,1.5vw,16px);color:#d4d5d8;line-height:1.72;max-width:620px;margin:0 auto}
+    .page{position:relative;background:radial-gradient(circle at 98% 20%,rgba(31,49,72,.25),transparent 31%),#080a0e}.container{max-width:var(--limit);margin:0 auto;padding:42px 24px 96px}
+    .summary{border:1px solid rgba(255,193,56,.38);border-radius:17px;background:linear-gradient(135deg,rgba(36,29,18,.92),rgba(12,16,22,.98));padding:27px 30px 24px;box-shadow:0 22px 65px rgba(0,0,0,.25)}.summary__heading{display:flex;align-items:center;gap:11px;color:#ffcd64;font-size:15px;font-weight:800;margin:0 0 14px}.summary__heading svg{width:22px;height:22px;flex:none}.summary p{margin:0 0 15px;color:#e6e4e1;font-size:13px;line-height:1.8}.summary__chips{display:flex;flex-wrap:wrap;gap:9px}.chip{font-size:10.5px;line-height:1.3;letter-spacing:.02em;font-weight:700;color:#f5d287;border:1px solid rgba(255,204,100,.26);padding:8px 13px;border-radius:99px;background:rgba(0,0,0,.17)}
+    .layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:55px;align-items:start;margin-top:49px}.toc{position:sticky;top:23px;border-left:1px solid var(--line);padding:3px 0 4px 21px}.toc h2{font-size:11px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin:0 0 17px;font-weight:800}.toc a{display:block;text-decoration:none;font-size:11.5px;color:#c8c9d0;margin:0 0 14px;font-weight:600;line-height:1.5}.toc a:hover{color:var(--gold)}.toc__update{display:block;margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:10px;line-height:1.7;color:#a6a8b0}
+    .sections{min-width:0}.section{scroll-margin-top:24px;margin-bottom:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.08)}.section:last-child{border:0;padding-bottom:0}.section__number{display:inline-block;color:#eeb24b;font-size:11px;letter-spacing:.09em;font-weight:800;margin-bottom:7px}.section h2{font-size:clamp(17px,2.2vw,23px);letter-spacing:-.035em;line-height:1.35;margin:0 0 12px;font-weight:800}.section p,.section li{font-size:12.5px;line-height:1.88;color:#cfd1d8}.section p{margin:0 0 13px}.section ul{padding-left:20px;margin:8px 0 17px}.section li{padding-left:3px;margin:7px 0}.section strong{color:#fff;font-weight:700}.section a{color:#f4ca79;text-underline-offset:4px}.attention{background:#15181f;border-left:3px solid var(--gold);padding:16px 20px;border-radius:0 9px 9px 0;margin-top:16px}.attention p:last-child{margin-bottom:0}.attention strong{color:#ffcf77}
+    .owner{margin:19px 0 5px;display:grid;gap:9px}.owner div{padding:13px 16px;background:#11151c;border:1px solid rgba(255,255,255,.10);border-radius:8px}.owner dt{font-size:10px;text-transform:uppercase;font-weight:800;color:#d9aa4c;letter-spacing:.07em}.owner dd{font-size:12px;margin:4px 0 0;color:#e4e6ed;word-break:break-word}.placeholder{color:#ffca83;font-weight:700}
+    .rights-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:18px 0 15px}.right-item{background:#10151b;border:1px solid rgba(252,196,71,.13);border-radius:9px;padding:13px 14px;font-size:11.5px;font-weight:600;color:#dfdfe4;line-height:1.5}.right-item:before{content:"✓";font-weight:900;color:var(--gold);margin-right:10px}
+    .contact{border:1px solid rgba(251,186,54,.37);border-radius:13px;padding:24px;background:linear-gradient(110deg,#18180f,#10151b);margin-top:12px}.contact h3{font-weight:800;font-size:17px;margin:0 0 7px}.contact p{margin-bottom:9px}.contact .mail{color:#ffcd72;font-size:12px;font-weight:700;overflow-wrap:anywhere}
+    .footer{border-top:1px solid rgba(255,195,55,.2);padding:28px 24px 34px;text-align:center;background:#07090c;color:#a8abb4;font-size:11px}.footer p{margin:6px}.footer a{color:#d6b56c;text-decoration:none;font-weight:700}.footer a:hover{text-decoration:underline}
+    @media(max-width:780px){.layout{grid-template-columns:1fr;gap:26px;margin-top:35px}.toc{position:static;padding:0 0 17px;border-left:0;border-bottom:1px solid var(--line)}.toc__links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 15px}.toc a{margin:0 0 11px}.toc__update{margin-top:10px}.container{padding:28px 17px 65px}.summary{padding:21px}.hero{min-height:365px}.hero-copy{margin-top:0;padding-bottom:55px}.rights-grid{grid-template-columns:1fr}}
+    @media(max-width:440px){.topbar{padding:14px 15px}.brand img{width:109px}.back{font-size:10px;padding:9px 10px}.hero h1{font-size:35px}.hero-copy{padding:5px 20px 48px}.hero-copy>p:last-child{font-size:12px}.eyebrow{letter-spacing:.17em}.toc__links{grid-template-columns:1fr 1fr}.toc a{font-size:10px}.summary__chips{gap:7px}.chip{font-size:10px;padding:7px 9px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.back{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="hero">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Voltar para a página do Do Zero ao Palco Experience"><img src="img/logo-do-zero-ao-palco.png" alt="Do Zero ao Palco Experience"></a>
+      <a class="back" href="index.html">← Voltar ao evento</a>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Do Zero ao Palco Experience</p>
+      <h1>Privacidade &amp;<br><span>Transparência</span></h1>
+      <span class="thin-glow" aria-hidden="true"></span>
+      <p>Respeitamos a sua privacidade. Aqui você encontra, com clareza, quais informações são solicitadas na inscrição, por que podem ser utilizadas e como exercer seus direitos.</p>
+    </div>
+  </header>
+  <main id="conteudo" class="page">
+    <div class="container">
+      <section class="summary" aria-label="Resumo sobre seus dados">
+        <h2 class="summary__heading"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg> Seus dados, tratados com responsabilidade</h2>
+        <p>O formulário do evento solicita <strong>nome, WhatsApp e e-mail</strong> para viabilizar o atendimento, a inscrição e as comunicações relacionadas ao Do Zero ao Palco Experience. Seus dados não são destinados à divulgação pública ou à venda de listas de contatos.</p>
+        <div class="summary__chips"><span class="chip">Finalidade definida</span><span class="chip">Informação transparente</span><span class="chip">Direitos garantidos pela LGPD</span></div>
+      </section>
+      <div class="layout">
+        <nav class="toc" aria-label="Nesta página">
+          <h2>Nesta página</h2>
+          <div class="toc__links">
+            <a href="#responsavel">01. Responsável</a>
+            <a href="#dados">02. Dados coletados</a>
+            <a href="#finalidades">03. Finalidades</a>
+            <a href="#bases">04. Bases legais</a>
+            <a href="#compartilhamento">05. Compartilhamento</a>
+            <a href="#whatsapp">06. Grupo de WhatsApp</a>
+            <a href="#prazo">07. Guarda e segurança</a>
+            <a href="#direitos">08. Seus direitos</a>
+            <a href="#tecnologias">09. Tecnologias do site</a>
+            <a href="#alteracoes">10. Atualizações</a>
+            <a href="#contato">11. Contato</a>
+          </div>
+          <span class="toc__update">Última atualização<br><strong>19 de outubro de 2026</strong></span>
+        </nav>
+        <article class="sections">
+          <section class="section" id="responsavel">
+            <span class="section__number">01 / IDENTIFICAÇÃO</span>
+            <h2>Quem é responsável pelos seus dados?</h2>
+            <p>A organização do <strong>Do Zero ao Palco Experience</strong> é responsável por definir como e por que os dados pessoais recebidos no processo de inscrição são utilizados, atuando como controladora, conforme a Lei Geral de Proteção de Dados Pessoais (LGPD).</p>
+            <dl class="owner">
+              <div><dt>Organizador / razão social</dt><dd><span class="placeholder">[INFORMAR NOME OU RAZÃO SOCIAL]</span></dd></div>
+              <div><dt>CNPJ (quando aplicável)</dt><dd><span class="placeholder">[INFORMAR CNPJ]</span></dd></div>
+              <div><dt>E-mail para assuntos de privacidade</dt><dd><span class="placeholder">[INFORMAR E-MAIL DE CONTATO]</span></dd></div>
+            </dl>
+          </section>
+          <section class="section" id="dados">
+            <span class="section__number">02 / INFORMAÇÕES</span>
+            <h2>Quais dados podem ser coletados?</h2>
+            <p>Durante o preenchimento do formulário, solicitamos <strong>nome, número de WhatsApp com DDD e endereço de e-mail</strong>. Também poderão ser registrados a data e a hora do envio e a manifestação de ciência da política, quando o serviço de formulário utilizado permitir.</p>
+            <p>A hospedagem e serviços técnicos utilizados pelo site também podem processar informações de acesso, como endereço IP, navegador e registros necessários ao funcionamento e à segurança da página.</p>
+          </section>
+          <section class="section" id="finalidades">
+            <span class="section__number">03 / FINALIDADES</span>
+            <h2>Por que utilizamos esses dados?</h2>
+            <ul>
+              <li>Receber e organizar solicitações de inscrição no evento.</li>
+              <li>Entrar em contato sobre orientações de inscrição, pagamento e confirmação de participação.</li>
+              <li>Enviar informações práticas sobre data, horário, local e eventuais atualizações do evento.</li>
+              <li>Disponibilizar orientações para acesso ao canal oficial de comunicação dos participantes, quando aplicável.</li>
+              <li>Atender dúvidas, solicitações de suporte e obrigações legais relacionadas à inscrição.</li>
+            </ul>
+            <p><strong>Comunicações promocionais de outros eventos ou serviços</strong> não estão incluídas automaticamente nessas finalidades. Caso sejam oferecidas, deverão ter aviso próprio e base legal adequada.</p>
+          </section>
+          <section class="section" id="bases">
+            <span class="section__number">04 / FUNDAMENTAÇÃO</span>
+            <h2>Qual é a base legal para o tratamento?</h2>
+            <p>Conforme a etapa da inscrição e a atividade realizada, o tratamento poderá se apoiar na execução de contrato ou de procedimentos preliminares solicitados pelo interessado, no cumprimento de obrigações legais e, quando cabível, no consentimento para finalidades específicas, nos termos da LGPD.</p>
+            <p>O registro de que você leu esta política serve para assegurar transparência e não transforma em consentimento obrigatório tratamentos que possuam outra base legal adequada.</p>
+          </section>
+          <section class="section" id="compartilhamento">
+            <span class="section__number">05 / TERCEIROS</span>
+            <h2>Com quem os dados podem ser compartilhados?</h2>
+            <p>Para executar as atividades descritas, informações estritamente necessárias poderão ser tratadas por serviços contratados de <strong>formulário, armazenamento, hospedagem, atendimento e processamento de pagamentos</strong>, quando esses recursos forem efetivamente integrados à página.</p>
+            <p>Ao avançar para um sistema externo de pagamento, você deverá consultar também os avisos de privacidade dessa plataforma. Esta landing page não solicita números de cartão, senhas bancárias nem dados completos de pagamento.</p>
+            <p>Não disponibilizamos a relação de interessados para comercialização por terceiros. Fornecedores que operem fora do Brasil poderão envolver transferência internacional de dados, sujeita às regras aplicáveis.</p>
+          </section>
+          <section class="section" id="whatsapp">
+            <span class="section__number">06 / COMUNICAÇÃO</span>
+            <h2>Como funciona o grupo de WhatsApp?</h2>
+            <p>Após a confirmação da participação e conforme o procedimento adotado pela organização, poderá ser oferecido acesso ao grupo oficial do evento para orientações e atualizações.</p>
+            <div class="attention"><p><strong>Informação importante:</strong> em grupos de WhatsApp, seu número de telefone e informações de perfil podem ficar visíveis para outros integrantes. Antes de ingressar, considere as configurações de privacidade da plataforma. A participação no grupo não autoriza a divulgação de seus dados para outras finalidades.</p></div>
+          </section>
+          <section class="section" id="prazo">
+            <span class="section__number">07 / PROTEÇÃO</span>
+            <h2>Por quanto tempo os dados são mantidos?</h2>
+            <p>As informações devem permanecer armazenadas somente pelo período necessário para administrar as inscrições, realizar o evento, atender solicitações posteriores e cumprir obrigações legais aplicáveis. Após esse período, deverão ser eliminadas ou anonimizadas, salvo quando houver fundamento legal para conservá-las.</p>
+            <p>Devem ser adotadas medidas técnicas e organizacionais proporcionais para limitar o acesso a pessoas autorizadas e reduzir riscos de acesso indevido, perda ou uso inadequado. Nenhum ambiente digital é totalmente isento de riscos.</p>
+          </section>
+          <section class="section" id="direitos">
+            <span class="section__number">08 / LGPD</span>
+            <h2>Quais são os seus direitos?</h2>
+            <p>Nos termos da LGPD e observadas as condições legais, você pode solicitar:</p>
+            <div class="rights-grid">
+              <span class="right-item">Confirmação do tratamento</span>
+              <span class="right-item">Acesso aos seus dados</span>
+              <span class="right-item">Correção de informações</span>
+              <span class="right-item">Eliminação ou anonimização, quando cabível</span>
+              <span class="right-item">Informações sobre compartilhamento</span>
+              <span class="right-item">Revogação do consentimento, quando aplicável</span>
+            </div>
+            <p>Para exercer esses direitos, entre em contato com o responsável indicado no início e no final desta página. Algumas informações poderão precisar ser conservadas para o cumprimento de obrigações legais.</p>
+            <p>Você também pode conhecer seus direitos no <a href="https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados-1/direito-dos-titulares" target="_blank" rel="noopener noreferrer">site oficial da Autoridade Nacional de Proteção de Dados (ANPD)</a>.</p>
+          </section>
+          <section class="section" id="tecnologias">
+            <span class="section__number">09 / NAVEGAÇÃO</span>
+            <h2>Cookies e serviços técnicos</h2>
+            <p>O projeto atual utiliza recursos de apresentação, como fontes externas, e serviços de hospedagem que podem receber dados técnicos necessários para disponibilizar a página. Caso sejam incluídos posteriormente serviços de análise de tráfego, publicidade, pixels de conversão ou cookies não essenciais, esta política e os mecanismos de escolha deverão ser revisados conforme a configuração efetiva.</p>
+            <p>Alguns serviços externos, como a plataforma de pagamento ou o WhatsApp, têm suas próprias políticas e tecnologias de rastreamento, sobre as quais a organização não possui controle integral.</p>
+          </section>
+          <section class="section" id="alteracoes">
+            <span class="section__number">10 / ATUALIZAÇÕES</span>
+            <h2>Esta política pode mudar?</h2>
+            <p>Sim. O documento poderá ser atualizado para refletir alterações nos serviços de inscrição, fornecedores, canais de atendimento ou exigências legais. A data da última atualização será exibida nesta página, e mudanças relevantes poderão ser informadas pelos canais oficiais do evento.</p>
+          </section>
+          <section class="section" id="contato">
+            <span class="section__number">11 / CONTATO</span>
+            <h2>Dúvidas sobre seus dados?</h2>
+            <div class="contact">
+              <h3>Fale com a organização</h3>
+              <p>Para esclarecimentos sobre esta política ou solicitações relacionadas aos seus dados pessoais, utilize o canal de privacidade disponibilizado pela organização:</p>
+              <div class="mail">[INFORMAR E-MAIL DE CONTATO]</div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>© 2026 Do Zero ao Palco Experience · Privacidade e Transparência</p>
+    <p><a href="index.html">← Voltar para a página do evento</a></p>
+  </footer>
+</body>
+</html>
