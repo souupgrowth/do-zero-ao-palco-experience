@@ -57,22 +57,6 @@ a{color:inherit}
 .signup h2,.faq h2{margin:0;font-size:clamp(32px,3.8vw,52px);font-weight:800;line-height:1.15;letter-spacing:-.045em}
 .signup .tiny-line,.faq .tiny-line{margin:12px auto 14px}
 .signup__lead{font-size:clamp(14px,1.36vw,17px);line-height:1.55;margin:0 auto 26px;max-width:760px;font-weight:500;text-shadow:0 3px 12px #000}
-.signup-form{max-width:1020px;margin:0 auto}
-.signup-form__fields{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
-.field{height:56px;display:flex;align-items:center;gap:13px;padding:0 15px;border:1px solid #8b919c;border-radius:11px;background:rgba(1,7,15,.86);text-align:left;transition:border-color .2s,box-shadow .2s}
-.field:focus-within{border-color:var(--gold);box-shadow:0 0 0 2px rgba(255,188,35,.17)}
-.field svg{width:24px;height:24px;flex:none;color:#e5e6e8}
-.field input{min-width:0;flex:1;background:transparent;border:none;outline:none;color:#fff;font-size:14px}
-.field input::placeholder{color:#b2b5bb;opacity:1}
-.field input:focus-visible{outline:none}
-.consent{display:flex;align-items:flex-start;justify-content:center;gap:8px;margin:15px 0 4px;color:#eeeeee;font-size:11.5px;line-height:1.5;text-align:left}
-.consent input{margin:2px 0 0;accent-color:var(--gold);flex:none}
-.consent a{text-decoration:underline;text-underline-offset:2px}
-.graphic-cta--submit{margin:3px auto 0;display:flex}
-.graphic-cta--submit img{width:clamp(295px,37vw,460px)}
-.form-feedback{min-height:25px;font-size:13px;line-height:1.45;max-width:710px;margin:0 auto;color:#ffd985}
-.form-feedback.is-error{color:#ffb6a1}
-.form-feedback.is-success{color:#c4f9da}
 .faq{padding:2px 16px 77px;text-align:center;margin:0 auto;max-width:1020px}
 .faq__list{margin:22px auto 0;max-width:900px;text-align:left;display:grid;gap:10px}
 .faq details{border:1.4px solid #e99e00;border-radius:10px;background:rgba(0,4,10,.87);box-shadow:0 0 10px rgba(242,166,0,.04)}
@@ -118,9 +102,6 @@ a{color:inherit}
   .scene-bottom{background-position:center top,center top;background-size:cover,auto 100%}
   .signup{padding:49px 18px 38px}
   .signup__lead{font-size:13px;margin-bottom:22px}
-  .signup-form__fields{grid-template-columns:1fr;gap:10px;max-width:430px;margin:0 auto 10px}
-  .field{height:51px}
-  .consent{max-width:430px;margin:15px auto 0;font-size:11px}
   .faq{padding:2px 14px 54px}
   .faq__list{gap:9px}
   .faq summary{font-size:12px;padding:15px}
@@ -140,13 +121,6 @@ a{color:inherit}
 /* Se ainda aparecer o visual antigo, verificar se o navegador carregou style.css?v=posicao3. */
 
 /* Versão 4: WhatsApp branco, sem ícone quadrado; botão final idêntico ao primeiro. */
-.field .whatsapp-icon{width:24px;height:24px;flex:none;color:#ffffff;display:block}
-.graphic-cta--submit{appearance:none;-webkit-appearance:none;background:transparent;border:0;padding:0;outline-offset:5px;cursor:pointer;margin:5px auto 0}
-.graphic-cta--submit img{width:clamp(295px,37vw,450px);height:auto;display:block}
-.graphic-cta--submit:disabled{opacity:.6;cursor:wait;pointer-events:none}
-.consent{max-width:950px;margin:15px auto 12px}
-.consent a{color:#ffd35a;font-weight:700;text-decoration:underline;text-underline-offset:3px}
-.consent a:hover{color:#fff}
 .footer a{color:#ffc13a;text-decoration:underline;text-underline-offset:3px}
 .footer a:hover{color:#fff}
 
@@ -165,4 +139,9 @@ a{color:inherit}
 .privacy-section p:last-child{margin-bottom:0}
 .privacy-section ul{margin:0;padding-left:20px}
 .privacy-note{border-left:3px solid #ffc12b;padding:11px 16px;background:rgba(255,191,29,.09);color:#fff;font-size:13px;line-height:1.6;margin-top:18px}
-@media(max-width:700px){.consent{max-width:430px}.graphic-cta--submit img{width:min(365px,96vw)}.privacy-header{padding-top:25px}.privacy-section{padding:18px 18px}.privacy-main{padding-left:12px;padding-right:12px}}
+
+/* V5 — botão da seção de inscrição aponta diretamente para a Greenn. */
+.graphic-cta--checkout{margin:6px auto 0;display:flex;width:max-content}
+.graphic-cta--checkout img{width:clamp(295px,37vw,450px);height:auto;display:block}
+.signup__checkout-info{font-size:12px;line-height:1.65;color:#e2e6ee;max-width:640px;margin:12px auto 0;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+@media(max-width:700px){.graphic-cta--checkout img{width:min(365px,96vw)}.signup__checkout-info{font-size:11px;max-width:430px}}
