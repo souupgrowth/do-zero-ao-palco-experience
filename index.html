@@ -25,7 +25,7 @@ src="https://www.facebook.com/tr?id=1726442425123804&ev=PageView&noscript=1"
   <meta name="description" content="Do Zero ao Palco Experience: uma experiência presencial sobre comunicação, posicionamento e vendas. 12 de novembro, das 18h às 23h, em Brusque/SC.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Do Zero ao Palco Experience | Comunicação & Vendas">
-  <meta property="og:description" content="O canal de vendas mais forte da sua empresa é você! Encontro presencial em 12 de novembro, das 18h às 23h, em Brusque/SC.">
+  <meta property="og:description" content="Quem domina o palco e o digital, multiplica oportunidades. Encontro presencial em 12 de novembro, das 18h às 23h, em Brusque/SC.">
   <title>Do Zero ao Palco Experience | Comunicação e Vendas</title>
   <!-- Versão 6: convite persuasivo e checkout direto. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +33,48 @@ src="https://www.facebook.com/tr?id=1726442425123804&ev=PageView&noscript=1"
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="preload" href="img/fundo1.png" as="image">
   <link rel="stylesheet" href="style.css?v=convite-20261021">
+
+  <style>
+    .hero__headline {
+      margin: 0 auto;
+      max-width: 1100px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+    }
+
+    .hero__headline > span {
+      display: block;
+    }
+
+    .hero__headline-main {
+      font-weight: 900;
+      color: #f4f4f4;
+      font-size: clamp(2.25rem, 6vw, 5.8rem);
+      text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero__headline-accent {
+      margin-top: 0.16em;
+      font-weight: 500;
+      color: #f5a000;
+      font-size: clamp(2rem, 5.7vw, 5.2rem);
+      letter-spacing: -0.035em;
+      text-shadow: 0 8px 30px rgba(245, 160, 0, 0.18);
+    }
+
+    @media (max-width: 768px) {
+      .hero__headline {
+        max-width: 92vw;
+        line-height: 0.98;
+      }
+
+      .hero__headline-accent {
+        margin-top: 0.22em;
+      }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -42,9 +84,8 @@ src="https://www.facebook.com/tr?id=1726442425123804&ev=PageView&noscript=1"
       <header class="hero" id="inicio">
         <img class="hero__logo" src="img/logo-do-zero-ao-palco.png" alt="Do Zero ao Palco Experience" width="420" height="228" fetchpriority="high">
         <h1 class="hero__headline">
-          <span>O CANAL DE VENDAS</span>
-          <span class="gold">MAIS FORTE DA SUA EMPRESA</span>
-          <span class="hero__you">É VOCÊ!</span>
+          <span class="hero__headline-main">Quem domina o palco e o digital,</span>
+          <span class="hero__headline-accent">Multiplica oportunidades.</span>
         </h1>
         <p class="hero__intro">Uma experiência sobre comunicação,<br class="desktop-break"> posicionamento e vendas.</p>
         <div class="event-details" aria-label="Informações do evento">
